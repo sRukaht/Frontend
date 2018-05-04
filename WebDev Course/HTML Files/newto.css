@@ -1,0 +1,29 @@
+*{
+	border: 1px dashed grey;
+}
+
+li a {
+	border: 1px solid red;
+	color: darkorange;
+}
+
+h3+ul {
+	color: purple;
+}
+
+ul+h3 {
+	color: darkblue;
+}
+
+#special{
+	color:green;
+}
+
+a[href="http://www.google.com"]
+{
+	background: lightgreen	;
+}
+
+li:nth-of-type(odd){
+	background:lightblue;
+}

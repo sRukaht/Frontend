@@ -1,0 +1,28 @@
+"/*"li{
+	border: 2px red solid;
+}"*/"
+
+#special {
+	background: yellow;	
+	margin: auto;
+}
+
+.completed{
+	text-decoration: line-through;
+}
+
+*{
+	border: 1px black dotted; "/*" this is going to be applied to all "*/"
+}
+ul li a{
+	color: green;
+}
+
+h1 a ul{
+	border: 4px solid black;
+}
+
+"/*"h1 a{         "/*" it is only accepting in h1+a and not in h1 a "*/"
+	color:orange;
+	border: 5px dotted blue;
+} "*/"

@@ -1,0 +1,26 @@
+"/*" this css part would set the background color as well as background image of whatever we put it inside-->"*/"
+li{
+background: rgba(200,100,100,0.8);
+}
+
+h1{
+	background: lightblue;
+	border-color:white;
+	border-width:10px;
+	border-style:dashed;    "/*" solid/dashed/dotted "*/"
+}
+h2{
+	background: yellow;
+	border: 5px dotted black;    "/*" remains the same "*/"
+}
+h3{
+	background: lightgreen;
+	border-color: pink;
+	border-width:3px;
+	border-style:solid;
+}
+body{
+	background:url(http://kb4images.com/images/puppies-wallpaper/37772202-puppies-wallpaper.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+}
