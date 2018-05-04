@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registeration Form</title>
+</head>
+<body>
+<h1>Register</h1>
+<form>
+	<label for="firstname"><b>FirstName:</b></label>
+	 <input type="text" name="firstname" id="firstname" placeholder="firstname" required>
+	<label for="lastname"><b>Lastname</b>:</label>
+	 <input type="text" name="lastname" id="lastname" placeholder="lastname" >
+<br><br>
+
+	<b>Gender:</b> 
+	<input type="radio" name="yay" id="male">
+	 <label for="male">male</label>
+	<input type="radio" name="yay" id="female">
+	 <label for="female">female</label>
+	<input type="radio" name="yay" id="other">
+	 <label for="other">other</label>
+	
+<br><br>
+	<label for="email"><b>Email:</b></label>
+	 <input type="email" name="email" id="email" placeholder="Email" required>
+	<label for="password"><b>Password</b></label>
+	 <input type="password" name="password" id="password" placeholder="Password" pattern=".{5,10}" title="Must contain 5-10 characters." required>
+<br><br>
+<label><b>Birthday:</b></label>
+    <select name="Date" type="Date" placehoder="Date" required>
+    	<option value="Date">Date</option>
+    	<option value="1">1</option>
+    	<option value="2">2</option>
+    	<option value="3">3</option>
+    	<option value="4">4</option>
+    	<option value="5">5</option>
+    	<option value="6">6</option>
+    	<option value="7">7</option>
+    	<option value="8">8</option>
+    	<option value="9">9</option>
+    	<option value="10">10</option>
+    	<option value="11">11</option>
+    </select>
+    <select name="Month" type="Month" placeholder="Month" required>
+    	<option value="Month">Month</option>
+    	<option value="Jan">Jan</option>
+    	<option value="Feb">Feb</option>
+    	<option value="Mar">Mar</option>
+    	<option value="Apr">Apr</option>
+    	<option value="May">May</option>
+    	<option value="Jun">Jun</option>
+    	<option value="Jul">Jul</option>
+    	<option value="Aug">Aug</option>
+    	<option value="Sep">Sep</option>
+    	<option value="Oct">Oct</option>
+    	<option value="Nov">Nov</option>
+    	<option value="Dec">Dec</option>
+
+    </select>
+	<select type="year' name="Year" placeholder="Year" required>
+		<option value="Year">Year</option>
+		<option value="1988">1988</option>
+		<option value="1989">1989</option>
+		<option value="1990">1990</option>
+		<option value="1991">1991</option>
+		<option value="1992">1992</option>
+		<option value="1993">1993</option>
+		<option value="1994">1994</option>
+		<option value="1995">1995</option>
+		<option value="1996">1996</option>
+		<option value="1997">1997</option>
+		<option value="1998">1998</option>
+		<option value="1999">1999</option>
+		<option value="2000">2000</option>
+		<option value="2001">2001</option>
+		<option value="2002">2002</option>
+		<option value="2003">2003</option>
+		<option value="2004">2004</option>
+		<option value="2005">2005</option>
+		<option value="2006">2006</option>
+		<option value="2007">2007</option>
+	</select><br><br>
+	I agree to the above written points by me <input type="checkbox" name="agree" required><br><br>
+	<button>submit</button>
+<button>reset</button>
+</form><br><br>
+
+</body>
+</html>
