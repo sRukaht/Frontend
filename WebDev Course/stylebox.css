@@ -1,0 +1,13 @@
+p{
+	border: 2px solid blue;
+	width:20%;  /*" % value will change upon changing the window size"*/
+	height:50px;
+	padding:20px; /*" space between the text and the box*/
+	margin: 50px 100px 200px 50px; /* top right bottom left */
+}
+
+#special{
+	color:red; 
+	margin: 0 auto 0 auto;  /*this will put it into centre */
+}
+
