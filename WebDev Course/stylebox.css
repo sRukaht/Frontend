@@ -8,6 +8,6 @@ p{
 
 #special{
 	color:red; 
-	margin: 0 auto 0 auto;  /*this will put it into centre */
+	margin: 0 auto 0 auto;  /*this will put it into centre, or 0 auto */ 
 }
 
