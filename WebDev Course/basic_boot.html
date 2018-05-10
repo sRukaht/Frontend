@@ -3,21 +3,29 @@
 <head>
 	<title>Bootstrap Basics</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<style type="text/css">
+		.btn-warning{
+			background-color: yellow;
+			color:darkorange;
+		}
+	</style>
 </head>
 <body>
 <h1>Bootstrap Basics</h1>
 <h2>Button Styles</h2>
-<button type="button" class="btn">Basic</button>
-<button type="button" class="btn btn-default">Default</button>
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button class="btn btn-info>Info</button>
+
 <button class="btn btn-success">Success</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning btn-sm">Warning</button>
+<button type="button" class="btn btn-danger btn-lg">Danger</button>
 <button type="button" class="btn btn-link">Link</button>
 <br>
-
-<div class="container">
+<br>
+<a href="http://www.getbootstrap.com" class="btn btn-info btn-lg">Bootstrap Docs</a><!--this will take you to the link-->
+<br><br>
+<button type="button" class="btn btn-lg btn-primary active">I'm Active</button>
+<br><br> 
+<button type="button" class="btn btn-primary" disabled="disabled">I'm Disabled</button>
+<!--<div class="container">
   <h2>Split Buttons</h2>
   <div class="btn-group">
     <button type="button" class="btn btn-primary">Sony</button>
@@ -29,7 +37,7 @@
       <li><a href="#">Smartphone</a></li>
     </ul>
   </div>
-</div>
+</div>-->
 
 
 </body>
