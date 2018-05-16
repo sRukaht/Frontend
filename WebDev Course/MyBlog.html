@@ -10,6 +10,97 @@
 	
 	<style type="text/css">
 
+
+
+    
+ element{
+        background-color:rgb(255,255,255);
+        margin-left: 140px;
+      }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 46px;
+    padding-left: 129px;
+
+ }
+    .bg-light {
+    
+    background-color: #FFFFFF;
+ }
+
+    .navbar-brand{
+      margin-left: 140px;
+    }
+  .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active
+   {
+
+    color: rgba(0,0,0,.75);
+    
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.75);
+    
+   }
+
+   .navbar-light .navbar-brand {
+    color: rgba(0,0,0,.75);
+   
+ }
+    .btn-outline-success:focus, .btn-outline-success.focus {
+    box-shadow: 0 0.2 0.2 2rem rgba(40, 167, 69, 0.5);
+ }
+
+      .nav-link{
+        font-size: 22.5px;
+      }   
+
+
+    .btn-outline-success {
+
+    color: white;
+    background-color: #4CAF50;
+    background-image: none;
+    border-color: #28a745;
+
+ }
+
+ 
+
+    .btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    border-radius: 0.70rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+      .bg-light {
+    background-color: rgb(255,255,255) !important;
+}
+
+    .form-control{
+      padding: 0.2rem 1.2rem;
+    }
+      .container{
+        background-color: rgb(255,255,255);
+      }
+ 
+      
+
 	/*.container{
     border-top-left-radius: 12px;
         border-top-right-radius: 12px;
@@ -33,7 +124,7 @@
     .center1{
     	font-family: Great Vibes;
     	font-size: 70px;
-    	padding-top: 280px;
+    	padding-top: 240px;
     	color:#000000;
     }
 
@@ -49,6 +140,10 @@
 
     }
 
+    .conatiner{
+        padding-top: 20px;
+    }
+
     body{
   background-image: url("https://www.elegantthemes.com/blog/wp-content/uploads/2016/02/photo-1429198739803-7db875882052.jpg");
   background-size: cover;
@@ -58,13 +153,43 @@
 
 </head>
 <body>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-	<div class="center1">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+	</div>
+	
+		<div class="center1">
 		<b>Inside The</b>
 	<div class="center2">
 		<b>Concrete Jungle</b>
 	</div>
 </div>
-
+	
 </body>
 </html>
