@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Return Capitalized</title>
+	<script type="text/javascript">
+		function capitalize(str)
+		{
+			if(typeof str === "number"){
+				return "that's not a string";
+			}
+
+			return str.charAt(0).toUpperCase() + str.slice(1);
+		}
+
+		var city="paris";
+		var capital= alert("The word is " + capitalize(city));
+
+		var num=20;
+		var capital= alert("The word is " + capitalize(num));
+	</script>
+</head>
+<body>
+
+</body>
+</html>
