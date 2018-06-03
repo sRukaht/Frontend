@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Problems</title>
+	<script type="text/javascript">
+		function iseven(num){
+			if(num%2===0){
+				return true;
+			}
+
+			else return false;
+		}
+
+		function factorial(num){
+			if(num===0)
+				return 1;
+            
+            var cal=1;
+
+			for(num;num>=1;num--)
+			{
+				cal=cal*num;
+			}
+
+			return cal;
+		}
+
+		function kebabtoSnake(str){
+			var newStr=str.replace(/-/g, "_");
+			return newStr;
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
