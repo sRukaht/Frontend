@@ -12,14 +12,25 @@
 			console.log(form.psw.value);
 			console.log(form.pswRepeat.value);
 
-			if(form[1].value==form[2].value)
+			if(form[1].value!==form[2].value)
 			{
-                form.password.focus();
-                return false;
+				alert("Warning: The two passwords do not match");
+				return false;
 			}
+
 			else{
-				alert('galat hai bc');
+				return false;
 			}
+		}
+
+		var myInput=document.getElementsByName("psw");
+
+		myInput.onfocus=function(){
+			document.getElementsById("message").style.display="block";
+		}
+
+		myInput.onblur=function(){
+			document.getElementsById("message").style.display="none";
 		}
 	</script>
 	<style type="text/css">
@@ -79,18 +90,26 @@
 					</div><br>
 				</div>
 
-				<label for="email" id="space"><b>Email</b></label>
+				<label for="email" name="email" id="space"><b>Email</b></label>
 				<input type="text" class="form-control" aria-describedby="emailHelp" id="space" placeholder="Enter Email" name="email" required>
 				<br>
 
-				<label for="psw" id="space"><b>Password</b></label>
-				<input type="password" class="form-control" aria-describedby="emailHelp" id="space" placeholder="Enter Password" name="psw" required>
+				<label for="psw" name="password" id="space"><b>Password</b></label>
+				<input type="password" class="form-control" aria-describedby="emailHelp" id="space" placeholder="Enter Password" name="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
 				<br>
 
 				<label for="pswRepeat" id="space"><b>Repeat Password</b></label>
 				<input type="password" class="form-control" aria-describedby="emailHelp" id="space" placeholder="Repeat password" name="pswRepeat" required>
 				<br>
 
+				<button type="submit" class="btn btn-success btn-sm" value="rohan">Confirm Password</button><br><br>
+                 <div id="message">
+                  <h3>Password must contain the following:</h3>
+                  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                  <p id="number" class="invalid">A <b>number</b></p>
+                  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                 </div>
 				<label>
 				<input type="checkbox" name="remember" style="margin-bottom:15px">  Remember me
 				</label>
@@ -101,8 +120,8 @@
 				
 
 				<div class="clearfix">
-					<a class="btn btn-lg btn-warning mb-2 btn-sm" href="#" role="button">Cancel</a>
-					<a type="submit" class="btn btn-lg btn-warning mb-2 btn-sm" href="http://localhost:8080/WebDev%20Course/imagegallery.html" role="button">Signup</a>
+					<a class="btn btn-lg btn-warning mb-2 " href="#" role="button">Cancel</a>
+					<a type="submit" class="btn btn-lg btn-warning mb-2" href="http://localhost:8080/WebDev%20Course/imagegallery.html" type="submit" value="submit" role="button">Signup</a>
 				</div>
 			</div>
 		</form>
